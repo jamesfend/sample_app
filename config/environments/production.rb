@@ -19,7 +19,11 @@ SampleApp::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
-
+  
+  # Generate digests for assets URLs
+  # http://stackoverflow.com/questions/7300532/blueprint-css-rails-3-1-help
+  config.assets.precompile += %w( screen.css print.css )
+  
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
 
