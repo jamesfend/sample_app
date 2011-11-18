@@ -15,14 +15,10 @@ SampleApp::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs
   config.assets.digest = true
-  
-  # Generate digests for assets URLs
-  # http://stackoverflow.com/questions/6415449/rails-3-1-asset-pipeline-missing-files-from-public-assets-why-isnt-this-the
-  config.assets.precompile += %w( *.js *.css )
   
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
